@@ -1,0 +1,158 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #bb1133;
+} 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/*NAWIGACJA*/
+
+header .container {
+  display:flex;
+}
+header {
+  background-color: #696969;
+}
+nav {
+  justify-content: flex-end;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  
+}
+nav > ul {
+  display: flex;
+  display: -webkit-flex;
+  list-style: none;
+  width: 70%;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+nav > ul > li {
+  display: flex;
+  display: -webkit-flex;
+    transition:0.5s;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    
+}
+nav > ul > li:hover {
+  background-color: #D8D8D8;
+  cursor: pointer;
+}
+nav > ul > li >a:hover {
+  color: black;
+  font-weight: bold;}
+li > a {
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+  display: flex;
+}
+/*JUMBOTRON*/
+.jumbotron {
+  height: 80vh;
+  display: flex;
+  color: white;
+  background-image: url(https://images.pexels.com/photos/198475/pexels-photo-198475.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  display: -webkit-flex;
+  background-position: center;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 5px 5px 2px #bb1133;
+}
+/*Galeria*/
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+.photo {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+.div-photo-size {
+  display: flex;
+  width: 390px;
+  height: 390px;
+  margin: 5px;
+}
+.gallery:hover .photo {
+  opacity: 0.1;
+}
+.gallery .photo:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+/*Karty*/
+.cards > div {
+  margin: 5px;
+  min-width: 200 px;
+  min-height: 80px;
+  background-color: #0000ff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  
+  padding: 10px;
+  border-radius: 5%;
+  box-shadow: 3px 3px 10px #888888;
+}
+.cards > div:hover {
+  transform: scale(1.15);
+} 
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 12px;
+  background-color: #bb1133;
+}
+
+/*Stopka*/
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #696969;
+  padding: px 0;
+  flex-wrap: wrap;
+}
+.grow2 {
+  flex: 2;
+}
+.grow1 {
+  flex: 1;
+}
+footer > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: bold;
+  color: white;
+  padding: 10px 5px;
+}
+  
